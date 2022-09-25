@@ -1,5 +1,351 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  background: #17171a;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+.logo {
+  margin: 1em;
+}
+.logo h1 {
+  background: -webkit-linear-gradient(right, #fbae91, #ead86e, #64f4c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  line-height: 3em;
+}
+nav ul li {
+  margin: 0.5em 1em;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+nav ul li a {
+  color: #fff;
+}
+.notification {
+  margin: 1em;
+}
+.notification i {
+  padding: 0 0.25em;
+  font-size: 1.25em;
+  line-height: 2em;
+  background: #fbc247;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .bg{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    max-width: 800px;
+    height: 800px;
+    background-color: #fff;
+} */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 3em 0;
+}
+.menu {
+  max-width: 250px;
+  width: 19%;
+  height: 500px;
+  background-color: rgb(23, 19, 19);
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+.menu h2 {
+  border-bottom: 1px solid #fbc247;
+  font-size: 1em;
+  padding: 0.5em;
+}
+.menu h2 i {
+  background: #fbc247;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  padding: 0.5em;
+}
+.menu li {
+  padding: 0.75em;
+  font-size: 1em;
+  font-weight: 700;
+}
+.menu h2:hover,
+.menu li:hover {
+  color: #fbc247;
+}
+.post1 {
+  text-align: center;
+  max-width: 47%;
+  width: 1000px;
+}
+.card {
+  background: #0cb664;
+  width: 70%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  text-align: left;
+  color: #fff;
+  font-size: 1.25em;
+}
+.bal {
+  margin-bottom: 1em;
+}
+.bal a {
+  color: #fff;
+}
+.wallet i {
+  font-size: 2em;
+}
+.btn {
+  text-align: center;
+  padding: 1em;
+}
+.btn .btn-1:active {
+  background: #242632;
+  color: #fff;
+  transition: 0.2s ease;
+}
+.btn .btn-2:active {
+  background-color: #febf32;
+  color: #000;
+  transition: 0.2s ease;
+}
+.btn .btn-1 {
+  background-color: #febf32;
+  color: #000;
+  border: none;
+  padding: 1em 2.5em;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn .btn-2 {
+  background-color: #242632;
+  color: #fff;
+  border: none;
+  padding: 1em 3em;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+.modal{
+    position: absolute;
+    top: 4.5em;
+    left: 0;
+    right: 0;
+    bottom: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+.modalcontent{
+    position: relative;
+    background: red;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+.modal .modalclose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    font-size: 36px;
+}
+
+.transactions {
+  font-size: 25px;
+  text-align: start;
+  margin-bottom: 1em;
+  color: white;
+  float: left;
+}
+
+.View {
+  font-size: 25px;
+  text-align: end;
+  margin-left: -85px;
+  margin-top: -23px;
+
+  color: white;
+}
+
+.contain .transactions {
+  width: 80%;
+}
+
+.history {
+  font-size: 18px;
+  margin-top: 10px;
+  float: left;
+  color: #fff;
+}
+
+.amount1 {
+  font-size: 18px;
+  margin-top: 10px;
+  float: left;
+  margin-left: 170px;
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.date {
+  font-size: small;
+}
+
+/* post-2222 */
+.post2 {
+  width: 400px;
+  max-width: 32%;
+  text-align: center;
+  font-size: 70px;
+}
+.Add_Money {
+  height: 350px;
+  background-color: rgb(23, 19, 19);
+  color: white;
+  font-size: 30px;
+  float: right;
+  list-style: none;
+}
+.post_add {
+  background-color: rgb(23, 19, 19);
+  font-size: large;
+  text-align: start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.enter_amount {
+  border: 1px solid rgb(32, 26, 26);
+  border-radius: 4px;
+  width: 70%;
+  height: 43px;
+  font-size: small;
+  color: rgb(67, 49, 49);
+  background-color: rgb(23, 19, 19);
+  margin-left: 21px;
+  text-align: left;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.rs {
+  color: white;
+  text-align: start;
+}
+.popular {
+  font-size: 20px;
+  margin-top: 15px;
+  background: linear-gradient(
+    to right,
+    #f67c7a,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 70px;
+}
+.paisa button {
+  color: yellow;
+  background-color: rgb(29, 22, 22);
+  border-radius: 4px;
+  border: black;
+  font-size: 17px;
+  padding: 3px;
+}
+.paisa :hover {
+  cursor: pointer;
+  background-color: green;
+  color: black;
+}
+.bank {
+  height: 70px;
+  border-radius: 5px;
+  background-color: #997a00;
+  margin-top: 10px;
+}
+.bank1 {
+  font-size: 20px;
+  padding-top: 19px;
+  padding-right: 120px;
+}
+.neft {
+  font-size: 15px;
+  color: rgb(129, 122, 122);
+  padding-right: 100px;
+  float: left;
+}
+.know {
+  font-size: 15px;
+  padding-right: 0px;
+}
+.send_money :hover {
+  cursor: pointer;
+  color: #df1d0f;
+}
+.continue {
+  height: 45px;
+  width: 80%;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #36b53d;
+}
+.continue :hover {
+  cursor: pointer;
 }
