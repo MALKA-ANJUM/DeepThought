@@ -171,7 +171,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(77, 77, 77, 0.7);
+    backdrop-filter: blur(8px);
     transition: all 0.4s;
     visibility: hidden;
     opacity: 0;
@@ -182,7 +182,7 @@ nav ul li a {
 }
 .modalcontent{
     position: relative;
-    background: red;
+    background: #2A2D3C;
     width: 500px;
     max-width: 90%;
     padding: 1em 2em;
@@ -280,25 +280,7 @@ nav ul li a {
   color: white;
   text-align: start;
 }
-.popular {
-  font-size: 20px;
-  margin-top: 15px;
-  background: linear-gradient(
-    to right,
-    #f67c7a,
-    #f48fb1,
-    #7e57c2,
-    #2196f3,
-    #26c6da,
-    #43a047,
-    #eeff41,
-    #f9a825,
-    #ff5722
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-left: 70px;
-}
+
 .paisa button {
   color: yellow;
   background-color: rgb(29, 22, 22);
@@ -347,5 +329,109 @@ nav ul li a {
   background-color: #36b53d;
 }
 .continue :hover {
+  cursor: pointer;
+}
+.modal_balance{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: #fff;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+.modalcontent i{
+  float: right;
+  color: #fff;
+  font-size: 2em;
+}
+.modal_bal h2{
+  font-size: 1em;
+  color: #8E9095;
+  padding-bottom: 0.5em;
+}
+.modal_bal p{
+  color: #8E9095;
+}
+.modal_wallet i{
+  font-size: 2em;
+  background: #fbc247;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.transaction_complete{
+  background-color: rgba(54, 181, 61, 0.6);
+  border-radius: 10px;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.transaction_complete i{
+  background: #36b53d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.75em;
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.transaction_complete div p{
+  color: #fff;
+  font-size: 1.2em;
+}
+.transaction_complete div a{
+  color: #4D505B;
+  font-weight: 700;
+}
+.details{
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  margin: 1em 0;
+}
+.from,
+.to{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  text-align: left;
+}
+.from h3,
+.to h3{
+  color: #fbc247;
+  font-weight: 400;
+}
+.from h2,
+.to h2{
+  color: #fff;
+}
+.from p,
+.to p{
+  color: #4D505B;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 500;
+}
+.from h5,
+.to h5{
+  color: #ccc;
+}
+.from img,
+.to img{
+  width: 50px;
+}
+.payment_method{
+  text-align: left;
+  padding: 1em;
+  color: #fff;
+}
+.payment_method h4 span{
+  font-weight: 300;
+}
+.btn button{
+  padding: 0.5em 1.5em;
+  border: none;
+  font-size: 1.15em;
+  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
 }
